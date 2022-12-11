@@ -18,3 +18,16 @@ Outro cenário é a criação de classs privadas que não devem ser acessadas di
 Alem disso, podemos moficar as propriedades SYMBOL para interceptar o comportamento padrão de objetos.
 
 por exemplo, alem do symbol.toToPrimitive, podemos utilizar as propriedade interator e async interator para adicionar comportamento para quando esse objeto for chamador por algum operador de iteração.
+
+## Map e WeakMap
+
+O tipo Map é uma especializacao de Object, para ser usado em cenários específicos. Seu objetivo não é substituir o object, mas sim trazer uma alterativa poderosa ao ser core.
+Em questão de performace o Map é mais poderoso em cenários onde precisamos ficar adicionando e removendo chaves dinamicamente, evitar conflitos entre nomes de propriedades que foram herdados do prototype chain e trazer uma semaânctica melhor para a manipulação dos dados.
+
+O map tras varias funções para validar se uma chave existe. Remover um item de forma que não prejudique o ciclo de vida do js, e ele possui implementação do padrão generator.
+
+Com ele cnseguirmos rodar um `for of` no objeto para saber suas chaves. Enquanto no Object teríamos que usar um `objet entries`, ou rodar um `for in` e manipular os valoes por index das chaves.
+
+Outro benefício é que podemos usar objetos como chaves de pesquisa. Equando o Object só trabalha com strings e Symbols.
+
+Ja o WeekMap, é usado em casos que precisamos apenas adicionar e remover chaves usando apenas o ID. O diferencial é que podemos usar apenas obj como chave e ele não é numerador, ou seja, não conseguirmos navegar nele pelo for of. A valantagem é a perfomace, pr ser um tipo de inferência fraco, os dados só ficam dele enquanto existir em memória.
