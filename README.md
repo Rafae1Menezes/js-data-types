@@ -36,3 +36,7 @@ Ja o WeekMap, é usado em casos que precisamos apenas adicionar e remover chaves
 
 Sua extrutura é uma lista que possui apenas itens únicos.
 É muito usado em lugares que vc precisa comparar duas listas.
+
+## Recleft
+
+Reflect é algo comum em liguagem de programação, como c#, Ruby e Python, ele tras a possibilidade de interceptar o compotamento padrão das funções ou do ciclo de vida dos objetos para adicionar funcionalidades customizadas. As propriedade dos Symbol faz um tipo de reflect. A diferência é que o Recleft resolve algum problemas de semântica do JS.
