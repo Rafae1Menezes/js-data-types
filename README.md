@@ -31,3 +31,8 @@ Com ele cnseguirmos rodar um `for of` no objeto para saber suas chaves. Enquanto
 Outro benefício é que podemos usar objetos como chaves de pesquisa. Equando o Object só trabalha com strings e Symbols.
 
 Ja o WeekMap, é usado em casos que precisamos apenas adicionar e remover chaves usando apenas o ID. O diferencial é que podemos usar apenas obj como chave e ele não é numerador, ou seja, não conseguirmos navegar nele pelo for of. A valantagem é a perfomace, pr ser um tipo de inferência fraco, os dados só ficam dele enquanto existir em memória.
+
+## Set
+
+Sua extrutura é uma lista que possui apenas itens únicos.
+É muito usado em lugares que vc precisa comparar duas listas.
